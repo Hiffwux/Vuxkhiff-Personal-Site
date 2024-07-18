@@ -31,6 +31,7 @@ class _VxhfStartPageState extends State<VxhfStartPage> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: Colors.black,
       body: CustomScrollView(
         slivers: [
           IntroBlock(),
