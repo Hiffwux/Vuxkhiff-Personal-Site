@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:vuxkhiff/widgets/about_block.dart';
-import 'package:vuxkhiff/widgets/intro_block.dart';
-import 'package:vuxkhiff/widgets/sticky_header.dart';
+import 'package:vuxkhiff/pages/resume/vxhf_resume_page.dart';
 
 void main() {
   runApp(const VxhfWeb());
@@ -16,30 +12,8 @@ class VxhfWeb extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Vuxkhiff',
-      home: VxhfStartPage(),
+      home: VxhfResumePage(),
     );
   }
 }
 
-class VxhfStartPage extends StatefulWidget {
-  const VxhfStartPage({super.key});
-
-  @override
-  State<VxhfStartPage> createState() => _VxhfStartPageState();
-}
-
-class _VxhfStartPageState extends State<VxhfStartPage> {
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.black,
-      body: CustomScrollView(
-        slivers: [
-          IntroBlock(),
-          StickyHeader(),
-          AboutBlock(),
-        ],
-      ),
-    );
-  }
-}

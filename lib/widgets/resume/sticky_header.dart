@@ -44,7 +44,6 @@ class StickyHeader extends StatelessWidget {
           foregroundColor: Colors.black,
           toolbarHeight: MediaQuery.of(context).size.height / 12,
           backgroundColor: Colors.black,
-          pinned: true,
           title: SizedBox(
             width: MediaQuery.of(context).size.width / 4,
             child: Padding(
@@ -68,26 +67,3 @@ class StickyHeader extends StatelessWidget {
     });
   }
 }
-
-/*return SliverAppBar(
-      toolbarHeight: MediaQuery.of(context).size.height / 12,
-      backgroundColor: Colors.black,
-      pinned: true,
-      title: SizedBox(
-        width: MediaQuery.of(context).size.width / 6,
-        child: Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: SvgPicture.asset("svg/logo_main.svg", fit: BoxFit.fitWidth,)
-        ),
-      ),
-      actions: [
-        Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Text('Резюме', style: GoogleFonts.inter(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w400),)
-        ),
-        Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Text('Портфолио', style: GoogleFonts.inter(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w400),)
-        ),
-      ],
-    );*/
