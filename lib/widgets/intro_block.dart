@@ -62,16 +62,17 @@ class IntroBlock extends StatelessWidget {
                   ///
                   ///Слой макет
                   Padding(
-                    padding: const EdgeInsets.all(40.0),
+                    padding: const EdgeInsets.all(60.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
+                        ///1 пустой блок
                         const Expanded(
                           flex: 1,
                           child: SizedBox.shrink(),
                         ),
 
-                        ///1 пустой блок
+                        ///блок с рисунком
                         Expanded(
                           flex: 6,
                           child: Row(
@@ -91,7 +92,7 @@ class IntroBlock extends StatelessWidget {
                           ),
                         ),
 
-                        ///блок с рисунком
+                        ///блок с логотипом
                         Expanded(
                           flex: 5,
                           child: Padding(
@@ -169,13 +170,11 @@ class IntroBlock extends StatelessWidget {
                           ),
                         ),
 
-                        ///блок с логотипом
+                        ///2 пустой блок
                         const Expanded(
                           flex: 1,
                           child: SizedBox.shrink(),
                         ),
-
-                        ///2 пустой блок
                       ],
                     ),
                   )

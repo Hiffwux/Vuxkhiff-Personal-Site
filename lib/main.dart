@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:vuxkhiff/widgets/about_block.dart';
 import 'package:vuxkhiff/widgets/intro_block.dart';
 import 'package:vuxkhiff/widgets/sticky_header.dart';
 
@@ -36,6 +37,7 @@ class _VxhfStartPageState extends State<VxhfStartPage> {
         slivers: [
           IntroBlock(),
           StickyHeader(),
+          AboutBlock(),
         ],
       ),
     );

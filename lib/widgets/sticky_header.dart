@@ -11,9 +11,13 @@ class StickyHeader extends StatelessWidget {
     return SliverLayoutBuilder(builder: (BuildContext context, SliverConstraints s_constrs) {
       if (s_constrs.crossAxisExtent >= 1000) {
         return SliverAppBar(
+          surfaceTintColor: Colors.black,
+          snap: true,
+          floating: true,
+          foregroundColor: Colors.black,
           toolbarHeight: MediaQuery.of(context).size.height / 12,
           backgroundColor: Colors.black,
-          pinned: true,
+          //pinned: true,
           title: SizedBox(
             width: MediaQuery.of(context).size.width / 6,
             child: Padding(
@@ -34,6 +38,10 @@ class StickyHeader extends StatelessWidget {
         );
       } else {
         return SliverAppBar(
+          surfaceTintColor: Colors.black,
+          snap: true,
+          floating: true,
+          foregroundColor: Colors.black,
           toolbarHeight: MediaQuery.of(context).size.height / 12,
           backgroundColor: Colors.black,
           pinned: true,
