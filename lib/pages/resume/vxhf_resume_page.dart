@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vuxkhiff/widgets/resume/about_block.dart';
+import 'package:vuxkhiff/widgets/resume/about_block_new.dart';
 import 'package:vuxkhiff/widgets/resume/intro_block.dart';
+import 'package:vuxkhiff/widgets/resume/skills_block.dart';
 import 'package:vuxkhiff/widgets/resume/sticky_header.dart';
 
 class VxhfResumePage extends StatefulWidget {
@@ -19,7 +21,8 @@ class _VxhfResumePageState extends State<VxhfResumePage> {
         slivers: [
           IntroBlock(),
           StickyHeader(),
-          AboutBlock(),
+          AboutBlockNew(),
+          SkillsBlock(),
         ],
       ),
     );
