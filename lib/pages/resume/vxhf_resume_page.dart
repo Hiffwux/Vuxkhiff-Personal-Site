@@ -13,9 +13,12 @@ class VxhfResumePage extends StatefulWidget {
 }
 
 class _VxhfResumePageState extends State<VxhfResumePage> {
+
+  //final scroll = ScrollController();
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.black,
       body: CustomScrollView(
         slivers: [

@@ -90,7 +90,7 @@ class IntroBlock extends StatelessWidget {
                                     child: Text(
                                       'РЕЗЮМЕ',
                                       style: GoogleFonts.inter(
-                                          color: Colors.white),
+                                          color: Colors.white, fontSize: 16 * ((MediaQuery.of(context).size.width / MediaQuery.of(context).size.height))),
                                     ),
                                   )),
                             ),
@@ -103,7 +103,7 @@ class IntroBlock extends StatelessWidget {
                                   child: Text(
                                     'ПОРТФОЛИО',
                                     style:
-                                        GoogleFonts.inter(color: Colors.white),
+                                        GoogleFonts.inter(color: Colors.white, fontSize: 16 * ((MediaQuery.of(context).size.width / MediaQuery.of(context).size.height))),
                                   ),
                                 ),
                               ),
@@ -178,11 +178,11 @@ class IntroBlock extends StatelessWidget {
                             children: [
                               Text(
                                 'РЕЗЮМЕ',
-                                style: GoogleFonts.inter(color: Colors.white),
+                                style: GoogleFonts.inter(color: Colors.white, fontSize: 16 * ((MediaQuery.of(context).size.width / MediaQuery.of(context).size.height))),
                               ),
                               Text(
                                 'ПОРТФОЛИО',
-                                style: GoogleFonts.inter(color: Colors.white),
+                                style: GoogleFonts.inter(color: Colors.white, fontSize: 16 * ((MediaQuery.of(context).size.width / MediaQuery.of(context).size.height))),
                               ),
                             ],
                           ),
